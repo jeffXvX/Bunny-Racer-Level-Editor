@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "BunnyRacerLevelEditor.dll": "sha256-TQ+hN+JqOv6AXe\/nfwadTXzSDlDoHNO1hoXQV6\/0ZJ4=",
+      "BunnyRacerLevelEditor.dll": "sha256-Fd\/wj9dn6N7SlcMrJ7rcFEst3R8ewhd8\/M0UB6Nj7Rg=",
       "Microsoft.AspNetCore.Components.dll": "sha256-ShP+mqSGh+DDgVwd3QUKUf3cFpLbn0hGPVuJWNWTcU8=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-AQ3I77Gi\/oQfJ8gdiMLY621qx1HPHzieIA1vnvq3Knk=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-LFwmKyRRwyavtvIk6MuOFrYgEb50fp1cLwat9qkiQsM=",
