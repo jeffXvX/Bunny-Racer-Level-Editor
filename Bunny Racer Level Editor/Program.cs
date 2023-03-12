@@ -1,4 +1,4 @@
-using Bunny_Racer_Level_Editor;
+using BunnyRacerLevelEditor;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
