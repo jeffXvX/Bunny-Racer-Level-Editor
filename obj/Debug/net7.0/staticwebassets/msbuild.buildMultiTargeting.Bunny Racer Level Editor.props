@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Bunny Racer Level Editor.props" />
+</Project>
