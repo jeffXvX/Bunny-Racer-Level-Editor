@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "exaRnZhB9HwVcJdzoZWr34+35ST19TZyXdRRKltN4HE=",
+  "Hash": "oE0wZFcBd9xd2wsN/8JaWEVvB+LoRrkh5n4ZBGEwm8U=",
   "Source": "BunnyRacerLevelEditor",
   "BasePath": "/",
   "Mode": "Root",
@@ -7310,12 +7310,12 @@
       "OriginalItemSpec": "wwwroot\\images\\bunny18.png"
     },
     {
-      "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\Bunny2.png",
+      "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny2.png",
       "SourceId": "BunnyRacerLevelEditor",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "images/Bunny2.png",
+      "RelativePath": "images/bunny2.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7324,15 +7324,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Bunny2.png"
+      "OriginalItemSpec": "wwwroot\\images\\bunny2.png"
     },
     {
-      "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\Bunny3.png",
+      "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny3.png",
       "SourceId": "BunnyRacerLevelEditor",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "images/Bunny3.png",
+      "RelativePath": "images/bunny3.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7341,7 +7341,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Bunny3.png"
+      "OriginalItemSpec": "wwwroot\\images\\bunny3.png"
     },
     {
       "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny4.png",
@@ -7446,12 +7446,12 @@
       "OriginalItemSpec": "wwwroot\\images\\bunny9.png"
     },
     {
-      "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\StoreLogo.scale-400.png",
+      "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\storeLogo.scale-400.png",
       "SourceId": "BunnyRacerLevelEditor",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "images/StoreLogo.scale-400.png",
+      "RelativePath": "images/storeLogo.scale-400.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7460,7 +7460,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\StoreLogo.scale-400.png"
+      "OriginalItemSpec": "wwwroot\\images\\storeLogo.scale-400.png"
     },
     {
       "Identity": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\index.html",

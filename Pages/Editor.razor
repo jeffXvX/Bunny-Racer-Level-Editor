@@ -3,7 +3,7 @@
 
 <PageTitle>Bunny Racer Level Editor</PageTitle>
 <h1><img src="images/storeLogo.scale-400.png" />Bunny Racer Level Editor</h1>
-<EditForm EditContext="@editContext" OnInvalidSubmit="@InvalidSubmit" OnValidSubmit="@DownloadFile">
+<EditForm EditContext=@editContext OnInvalidSubmit=@InvalidSubmit OnValidSubmit=@DownloadFile>
 	<h4>
 		@if (timerlevel.Timer < 1)
 			timerlevel.Timer = 1;
@@ -33,52 +33,63 @@
 
 <h4>
 	<br />
-	Number of columns: (@columns.Count) <button @onclick="@(e => AddColumn(columns.Count, 14, 0))">Add</button>
+	Number of columns: (@columns.Count) <button @onclick="@(() => AddColumn(columns.Count, 27, 0))">Add</button>
 </h4>
 
 <style>
 	.grid-container {
 		display:grid;
 		grid-template-columns: repeat(@columns.Count, 146px);
-		grid-template-rows: repeat(19, 36px);
-		background-color: white;
+		grid-template-rows: 36px repeat(28, 18px) repeat(4, 36px);
+		background-color: rgba(51,255,51,1);
 		padding: 0px;
 		grid-auto-flow: column dense;
 		align-content: start;
+		width: @(columns.Count*146 + "px");
 	}
 
-	.grid-item{
-		background-color: rgba(255,255,255,.8);
+	.grid-menu-item{
+		background-color: white;
 		border: 0px;
 		padding: 0px;
 		text-align: center;
 	}
+
+	.grid-fill-item {
+		background-color: rgba(51,255,51,1);
+		border: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+
+
+
 </style>
 
 <div class="grid-container">
 	@foreach (var column in columns)
 	{
 
-		if (column.InverseHeight < 1)
-			column.InverseHeight = 1;
+		if (column.InverseHeight < 0)
+			column.InverseHeight = 0;
 
-		if (column.InverseHeight > 15)
-			column.InverseHeight = 15;
+		if (column.InverseHeight > 28)
+			column.InverseHeight = 28;
 
-		column.Height = 15 - column.InverseHeight;
+		column.Height = 28 - column.InverseHeight;
 
-		<div class="grid-item">
-			<input type="number" min="1" max="15" @bind=@column.InverseHeight>
+		<div class="grid-menu-item">
+			<input type="number" min="0" max="28" @bind=@column.InverseHeight>
 		</div>
 
 		var x = 0;
 		while (x < column.Height)
 			{
-				<div> <img src="images/bunny0.png"> </div>
+				<div class="grid-fill-item"> </div>
 				x++;	
 			}
 
-		<div class="grid-item">
+		<div class="grid-fill-item">
 			<p>
 					<img src=@("images/bunny" + column.PlatformType + ".png")>
 				</p>
@@ -86,14 +97,14 @@
 
 		x++;
 
-		while (x <= 14)
+		while (x <= 28)
 		{
-			<div> <img src="images/bunny0.png"> </div>
+			<div>  </div>
 			x++;
 		}
 
 
-		<div class="grid-item">
+		<div class="grid-menu-item">
 			<InputSelect @bind-Value=column.PlatformType>
 				<option value=0>Empty</option>
 				<option value=1>Green Block</option>
@@ -118,11 +129,11 @@
 			</InputSelect>
 		</div>
 		
-		<div class="grid-item">
-			<button @onclick="@(e => DeleteColumn(column.ColumnNumber))">Delete</button>
+		<div class="grid-menu-item">
+			<button @onclick="@(() => DeleteColumn(column.ColumnNumber))">Delete</button>
 		</div>
-		<div class="grid-item">
-			<button @onclick="@(e => InsertColumn(column.ColumnNumber, 14, 0))">Insert</button>
+		<div class="grid-menu-item">
+			<button @onclick="@(() => InsertColumn(column.ColumnNumber, 27, 0))">Insert</button>
 		</div>
 
 	}
@@ -147,15 +158,16 @@
 	private const string NewLine = "\n";
 	private string? saveError;
 	private string? openError;
+	private decimal decimalHeight;
 
 	private void AddColumn(int newColumnNumber, int newHeight, int newPlatformType)
 	{
-		columns.Add(new LevelColumn { ColumnNumber = newColumnNumber, Height = newHeight, InverseHeight = 15 - newHeight, PlatformType = newPlatformType});
+		columns.Add(new LevelColumn { ColumnNumber = newColumnNumber, Height = newHeight, InverseHeight = 28 - newHeight, PlatformType = newPlatformType});
 	}
 
 	private void InsertColumn(int newColumnNumber, int newHeight, int newPlatformType)
 	{
-		columns.Insert(newColumnNumber, new LevelColumn { ColumnNumber = newColumnNumber, Height = newHeight, InverseHeight = 15 - newHeight, PlatformType = newPlatformType });
+		columns.Insert(newColumnNumber, new LevelColumn { ColumnNumber = newColumnNumber, Height = newHeight, InverseHeight = 28 - newHeight, PlatformType = newPlatformType });
 		for (int x = 0; x < columns.Count; x++)
 		{
 			columns[x].ColumnNumber = x;
@@ -217,18 +229,17 @@
 			columns.Clear();
 
 			if (items is not null)
-			foreach (string item in items)
-			{
-				string[] values = item.Split(',');
-				if (values[0] != "")
+				foreach (string item in items)
 				{
-					int TypeFromFile = Convert.ToInt32(values[0]);
-					decimal DecHeightFromFile = Convert.ToDecimal(values[1]);
-					Math.Round(DecHeightFromFile);
-					int HeightFromFile = Convert.ToInt32(DecHeightFromFile);
-					AddColumn(0,15-HeightFromFile, TypeFromFile);
+					string[] values = item.Split(',');
+					if (values[0] != "")
+					{
+						int TypeFromFile = Convert.ToInt32(values[0]);
+						decimal DecHeightFromFile = Convert.ToDecimal(values[1]);
+						int HeightFromFile = Convert.ToInt32(DecHeightFromFile*2);
+						AddColumn(0,28-HeightFromFile, TypeFromFile);
+					}
 				}
-			}
 
 		}
 
@@ -282,7 +293,10 @@
 		saveError = null;
 		outputString = $"{(columns.Count + 2)}{NewLine}{timerlevel.Timer}{NewLine}0,0{NewLine}0,0{NewLine}";
 		foreach (var column in columns)
-			outputString += $"{column.PlatformType},{column.Height}{NewLine}";
+		{
+			decimalHeight = Decimal.Divide(28-column.Height, 2);
+			outputString += $"{column.PlatformType},{decimalHeight}{NewLine}";
+		}
 		outputString += $"{NewLine}{NewLine}";
 
 		await JS.InvokeAsync<object>(

@@ -69,18 +69,6 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\Bunny2.png",
-      "PackagePath": "staticwebassets\\images\\Bunny2.png"
-    },
-    {
-      "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\Bunny3.png",
-      "PackagePath": "staticwebassets\\images\\Bunny3.png"
-    },
-    {
-      "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\StoreLogo.scale-400.png",
-      "PackagePath": "staticwebassets\\images\\StoreLogo.scale-400.png"
-    },
-    {
       "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny0.png",
       "PackagePath": "staticwebassets\\images\\bunny0.png"
     },
@@ -125,6 +113,14 @@
       "PackagePath": "staticwebassets\\images\\bunny18.png"
     },
     {
+      "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny2.png",
+      "PackagePath": "staticwebassets\\images\\bunny2.png"
+    },
+    {
+      "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny3.png",
+      "PackagePath": "staticwebassets\\images\\bunny3.png"
+    },
+    {
       "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny4.png",
       "PackagePath": "staticwebassets\\images\\bunny4.png"
     },
@@ -147,6 +143,10 @@
     {
       "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\bunny9.png",
       "PackagePath": "staticwebassets\\images\\bunny9.png"
+    },
+    {
+      "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\images\\storeLogo.scale-400.png",
+      "PackagePath": "staticwebassets\\images\\storeLogo.scale-400.png"
     },
     {
       "Id": "C:\\Users\\jeffr\\source\\repos\\bunny\\Bunny Racer Level Editor\\Bunny Racer Level Editor\\wwwroot\\index.html",

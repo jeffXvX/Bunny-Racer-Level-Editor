@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-kgowZLZGyceaJo4bHvVY1kmm1GJuawa5rPO1RCfNYWc=",
       "netstandard.dll": "sha256-2\/SuexPFW8hizUgbgPcchYHfG\/zmGzzMN6ESSyefPRQ=",
       "System.Private.CoreLib.dll": "sha256-mcywrbK0VZXiOvZ4dxU1ocaPZFplCRSIPQ\/wFikcrus=",
-      "BunnyRacerLevelEditor.dll": "sha256-mv5R4YZPy7I8HaZF835UvhQDSqnVRdBfIkAPvhO9a9Q="
+      "BunnyRacerLevelEditor.dll": "sha256-pJwo15pYETbl4mkPz+3G0OdohhegbRPK\/yXPlrwon4Q="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BunnyRacerLevelEditor.pdb": "sha256-ljWsPFZxO+1wKQyJY+mYiBoPL+ARiDazof8jhidrj18="
+      "BunnyRacerLevelEditor.pdb": "sha256-5MCC1jzpg2b+krtlMfxIrjC\/XaqTTp7rHe3kf+FCZSA="
     },
     "runtime": {
       "dotnet.7.0.3.ke7tmm6qq3.js": "sha256-DxGvmbtUa6hGJpk3VyMEbkPZ653qWbQkh8X4ZVM9TWM=",
